@@ -1,0 +1,114 @@
+MIDIPLUS SmartPAD
+2017-04-20 0.1.0
+2017-04-28 0.1.1
+
+SUMMARY: 
+* encoder: 20 clicks, send midi controlchange
+* leftbuttons: blue, no midi, set encoder CC# group (CC# multiple of 16)
+* rightbuttons: red, midi only in MODE CLIP
+* bottombuttons: green, no midi, mode-selection
+* pads: midi note-on+off. Darkblue, lightblue, red, green, purple:  2 multicolor leds?
+
+Encoders + leftbuttons function irrespective of mode.
+MODE CLIP: pads + rightbuttons, note on+off (best mode?).
+MODE 1: pads, partly lit, partly only note-off.
+MODE 2: pads, note on+off
+MODE SET: shows current CC values as columns; pads set it to preset values.
+
+Known Bug:
+1: switch to MODE CLIP does not (always?) reset pads
+
+=======================================================
+ENCODERS
+http://www.midimountain.com/midi/midi_control_mode.html
+channel 1
+CC#		ENC	1	2	3	4	5	6	7	8
+BTN
+Volume		00	01	02	03	04	05	06	07
+SendA		16	17	18	19	20	21	22	23
+SendB		32	etc
+Pan			48
+Ctrl1		64
+Ctrl2		80
+Ctrl3		96
+Ctrl4		112	113	114	115	116	117	118	119
+
+=======================================================
+MODE: CLIP
+* grid + rightbuttons
+(http://www.midimountain.com/midi/midi_note_numbers.html)
+		channel 1						channel 3
+		0,0								Master
+note#	0	1	2	3	4	5	6	7	112
+		16	17	18	19	20	21	22	23	113
+		32	etc							114
+		48								115
+		64								116
+		80								117
+		96							103	118
+		112							119	119
+PAD:
+channel 1 
+note-on $80 velocity $7f (red)
+note-off $90 velocity $00 (off)
+channel 3
+note-on $82 velocity $7f (red)
+note-off $92 velocity $00 (off)
+
+LED:
+c0 (0) note-on=red	note-off=blue?
+
+=======================================================
+MODE 1
+* just the grid, notenumbers bottomup in quadrants
+(http://www.midimountain.com/midi/midi_note_numbers.html)
+		channel 2						
+		0,0								
+note#	80	81	82	83	48	49	50	51
+		76	77	78	79	44	45	46	47
+		72	73	74	75	40	41	42	43
+		68	69	70	71	36	37	38	39
+		64	65	66	67	32	33	34	35
+		60	61	62	63	28	29	30	31
+		56	57	58	59	24	25	26	27
+		52	53	54	55	20	21	22	23
+
+PAD:
+note-on $81 velocity $7f (blue)
+note-off $91 velocity $00 (off)
+
+=======================================================
+MODE 2
+* just the grid, mixed notenumbers, missing note-ons. 
+(http://www.midimountain.com/midi/midi_note_numbers.html)
+		channel 3	
+		0,0								colour
+note#	208	209	210	211	212	213	214	215	(off)
+		224	225	226	227	228	229	230	231	(off)
+		240	241	242	243	244	245	246	247	(off)
+		00	01	02	03	04	05	06	07	(off)
+		16	17	18	19	20	21	22	23	(off)
+		32	33	34	35	36	37	38	39	(green,off)
+		48	49	50	51	52	53	54	55	(blue,off)
+		64	65	66	67	68	69	70	71	(red, off)
+
+PAD:
+note-on $82 velocity $7f
+note-off $92 velocity $00
+
+=======================================================
+MODE SET: 
+* leftbuttons: select CC# group*16
+* grid column: select CC# *1
+* grid row: sets CCvalue  
+
+CCvalue			PADS
+ROW
+Volume(green)	127
+SendA(red)		105
+SendB(dblue)	 90
+Pan(lblue)	 	 78
+Ctrl1(C)		 64
+Ctrl2(C)		 40
+Ctrl3(C)		 20
+Ctrl4(C)		 00
