@@ -12,6 +12,7 @@ Not much info is available for this device. So i decided to try to reverse-engin
 * software used to reverse-engineer the above.
 
 OPEN QUESTIONS:
+* leds can't be turned off via midi!?
 * the purple-pad color, is it a bug?
 * whatis the difference between the 2(?) firmware versions?
 * how hackable is the firmware?
