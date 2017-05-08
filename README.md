@@ -1,6 +1,6 @@
 # smartpad-tester
 
-*DISCLAIMER: use info here at your own risk, it might open a black hole or worse. Unfinished work.*
+*DISCLAIMER: use info here at your own risk, it might open a black hole or worse. Unfinished work. And i don't know Python :)*
 
 This repo collects information about the Smartpad Midicontroller as eg available at Amazon:
 https://www.amazon.com/midiplus-Smartpad-USB-MIDI-Controller/dp/B00WU6FDNG
