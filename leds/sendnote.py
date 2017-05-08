@@ -17,8 +17,8 @@ for channel in channels:
         for note in range(0,127,4):
             print(channel, velocity, note)
             player.note_on(note, velocity)
-            time.sleep(0.02)
-            player.note_off(64, 127)
+            time.sleep(0.1)
+            player.note_off(note, velocity)
 del player
 pygame.midi.quit()
 print ("end")
