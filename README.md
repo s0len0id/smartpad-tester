@@ -2,7 +2,7 @@
 
 *DISCLAIMER: use info here at your own risk, it might open a black hole or worse. Unfinished work. And i don't know Python :)*
 
-This repo collects information about the Smartpad Midicontroller as eg available at Amazon:
+This repo collects information about the MidiPLUS Smartpad Midicontroller as eg available at Amazon:
 https://www.amazon.com/midiplus-Smartpad-USB-MIDI-Controller/dp/B00WU6FDNG
 
 Not much info is available for this device. So i decided to try to reverse-engineer and collect findings here.
@@ -12,7 +12,8 @@ Not much info is available for this device. So i decided to try to reverse-engin
 * software used to reverse-engineer the above.
 
 OPEN QUESTIONS:
-* leds can't be turned off via midi?
+* how to turn off leds via midi? Red, blue, but off?
+* what about the other colours (lightblue, green)
 * the purple-pad color, is it a bug?
 * whatis the difference between the 2(?) firmware versions?
    * how hackable is the firmware?
