@@ -1,6 +1,4 @@
 MIDIPLUS SmartPAD
-2017-04-20 0.1.0
-2017-04-28 0.1.1
 
 SUMMARY: 
 * encoder: 20 clicks, send midi controlchange
@@ -56,7 +54,9 @@ note-on $82 velocity $7f (red)
 note-off $92 velocity $00 (off)
 
 LED:
-c0 (0) note-on=red  note-off=blue?
+* note-on = RED
+* note-off = BLUE
+* PADS only, any channel, any velocity, note# 0-127
 
 =======================================================
 MODE 1
