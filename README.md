@@ -19,5 +19,6 @@ OPEN QUESTIONS:
    * translated: https://translate.google.nl/translate?sl=auto&tl=en&js=y&prev=_t&hl=en&ie=UTF-8&u=https%3A%2F%2Fwww.nightclubber.com.ar%2Fforo%2F162%2Fhardware-djs-and-productores%2F356629%2Fmidiplus-smartpad.html&edit-text=
 * do the left- and bottom button rows really never send midi?
    * eg the cursorkeys don't seem to do anything (with this firmware?)
+   * see https://github.com/s0len0id/smartpad-tester/blob/master/notes/amazon-review.txt for Ableton-mode sysex
 * is there a special mode by holding a button pressed while powering-up?
 * does it respond to eg controlchange, other midi?
