@@ -11,10 +11,9 @@ Not much info is available for this device. So i decided to try to reverse-engin
 * which MIDI data can it receive to color the LEDS.
 * software used to reverse-engineer the above.
 
+*RECOMMEND TO UPDATE TO v15 firmware:* http://www.midiplus.com.tw/MIDIPLUS-Download.files/Firmware%20update/SmartPAD%20Firmware%20Update%20V0.15%2020171103.zip
+
 OPEN QUESTIONS:
-* how to turn off leds via midi? Red, blue, but off?
-* what about the other colours (lightblue, green)
-* the purple-pad color, is it a bug?
 * whatis the difference between the 2(?) firmware versions?
    * how hackable is the firmware?
    * translated: https://translate.google.nl/translate?sl=auto&tl=en&js=y&prev=_t&hl=en&ie=UTF-8&u=https%3A%2F%2Fwww.nightclubber.com.ar%2Fforo%2F162%2Fhardware-djs-and-productores%2F356629%2Fmidiplus-smartpad.html&edit-text=
