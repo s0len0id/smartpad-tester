@@ -1,6 +1,9 @@
 import pygame.midi
 import time
 
+# MODE Clip
+# row by row, all colours
+
 pygame.midi.init()
 print("start")
 # for port in (pygame.midi.get_count())
