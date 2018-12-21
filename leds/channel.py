@@ -13,17 +13,16 @@ player.set_instrument(0)
 # led RED  = channel 0, note#, note_on
 # led BLUE = channel 0, note#, note_off
 # is that all ?! :(
-channels = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
-for channel in channels:
-    for velocity in range(0, 127):
-        print(channel, velocity)
-        for note in range(16, 32, 1):
+for channel in range(0, 16):
+    for velocity in range(16, 128, 16):
+        print("=== ON ===")
+        for note in range(0, 8):
+            print(channel, velocity, note)
             player.note_on(note, velocity, channel)
-        time.sleep(1)
-        for note in range(16, 32, 1):
+            time.sleep(0.5)
+        print("=== OFF ===")
+        for note in range(0, 8):
             player.note_off(note, velocity, channel)
-            # player.note_on(note, 0)
-        time.sleep(1)
 del player
 pygame.midi.quit()
 print ("end")
