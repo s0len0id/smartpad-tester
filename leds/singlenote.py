@@ -13,15 +13,10 @@ player.set_instrument(0)
 
 channel = 0
 note = 0
-velocity1= 12
-velocity2= 12
+velocity = 80
 
-for count in range(0,2):
- print(velocity1)
- player.note_on(note, velocity1)
- time.sleep(0.1)
-
- player.note_off(note, velocity2)
+for note in range(0,128, 16):
+ player.note_on(note, velocity)
  time.sleep(0.1)
 
  player.note_off(note, 0)
