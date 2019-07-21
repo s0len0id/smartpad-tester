@@ -1,4 +1,4 @@
-MIDIPLUS SmartPAD
+MIDIPLUS SmartPAD *** PRE v0.15 firmware ***
 
 SUMMARY: 
 * encoder: 20 clicks, send midi controlchange

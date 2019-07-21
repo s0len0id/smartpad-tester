@@ -2,6 +2,9 @@
 
 *DISCLAIMER: use info here at your own risk, it might open a black hole or worse. Unfinished work. And i don't know Python :)*
 
+*RECOMMEND TO UPDATE TO v0.15 firmware:* http://www.midiplus.com.tw/MIDIPLUS-Download.files/Firmware%20update/SmartPAD%20Firmware%20Update%20V0.15%2020171103.zip
+V0.15 fixes multicolor leds over midi!
+
 This repo collects information about the MidiPLUS Smartpad Midicontroller as eg available at Amazon:
 https://www.amazon.com/midiplus-Smartpad-USB-MIDI-Controller/dp/B00WU6FDNG
 
@@ -11,7 +14,6 @@ Not much info is available for this device. So i decided to try to reverse-engin
 * which MIDI data can it receive to color the LEDS.
 * software used to reverse-engineer the above.
 
-*RECOMMEND TO UPDATE TO v15 firmware:* http://www.midiplus.com.tw/MIDIPLUS-Download.files/Firmware%20update/SmartPAD%20Firmware%20Update%20V0.15%2020171103.zip
 
 OPEN QUESTIONS:
 * whatis the difference between the 2(?) firmware versions?
