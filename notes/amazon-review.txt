@@ -1,3 +1,6 @@
+Big thanks to user Dadu who posted an Amazon review with tech details: https://www.amazon.com/gp/customer-reviews/R34QXUGZ94NYTG
+
+"...
 However, if you aren't plugged into Ableton, the arrow keys won't be enabled. To fake being in Ableton, send the system exclusive stream "F0 26 65 01 11 02 F7".
 As a public service, I'll talk about some of the codes it sends.
 The device has 64 pads with LEDs under them, which can light up in different colors if you send note-ons to them with different velocities. Sending Channel 0 and the note number addresses the pad, velocity in groups of 16 sets the colors:
@@ -21,3 +24,4 @@ Mode 1 divides it into two wide columns, sending on channel 2 , mapped like this
 52 53 54 55 | 20 21 22 23
 Mode 2 is a little too complicated to describe here... it might only make sense to Ableton.
 Set Mode treats the pads as presets for the knobs (which you can further tweak by turning them). The left-right arrows can set other CC's, and the first four buttons on the left will change to the next bank of 16 CC's: pretty nice!
+..."
