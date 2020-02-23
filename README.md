@@ -5,6 +5,8 @@
 *RECOMMEND TO UPDATE TO v0.15 firmware:* http://www.midiplus.com.tw/MIDIPLUS-Download.files/Firmware%20update/SmartPAD%20Firmware%20Update%20V0.15%2020171103.zip
 V0.15 fixes multicolor leds over midi!
 
+See here for an alternative firmware: https://github.com/DerFetzer/open-cleverpad
+
 This repo collects information about the MidiPLUS Smartpad Midicontroller as eg available at Amazon:
 https://www.amazon.com/midiplus-Smartpad-USB-MIDI-Controller/dp/B00WU6FDNG
 
