@@ -3,7 +3,8 @@
 ## preface
 *DISCLAIMER: use info here at your own risk, it might open a black hole or worse. Unfinished work. And i don't know Python :)*
 
-*RECOMMEND TO UPDATE TO v0.15 firmware:* http://www.midiplus.com.tw/MIDIPLUS-Download.files/Firmware%20update/SmartPAD%20Firmware%20Update%20V0.15%2020171103.zip
+*RECOMMEND TO UPDATE TO v0.15 firmware:* 
+This original link died unfortunately, see firmware subfolder.  http://www.midiplus.com.tw/MIDIPLUS-Download.files/Firmware%20update/SmartPAD%20Firmware%20Update%20V0.15%2020171103.zip
 V0.15 fixes multicolor leds over midi!
 
 Alternative firmwares:
