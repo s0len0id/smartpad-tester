@@ -21,6 +21,9 @@ Not much info is available for this device. So i decided to try to reverse-engin
 * which MIDI data can it receive to color the LEDS.
 * software used to reverse-engineer the above.
 
+ALTERNATIVE MODE
+Conect the SmartPad as usual and press "Send B" + "Pan" + "3" + "4". This will set a mode where all pads are notes.
+https://www.youtube.com/watch?v=k7PzwqKovok
 
 OPEN QUESTIONS:
 * whatis the difference between the 2(?) firmware versions?
